@@ -1,5 +1,7 @@
 <h3>React Router</h3>
-
+<p>
+    React Router es una librería que se utiliza bastante con React y que nos facilita el proceso de definir las rutas de navegación dentro de nuestra aplicación. Al igual que el propio React, esta librería (react router) usa una metodología declarativa en vez de imperativa.
+</p>
 <br><b>01. Instalar React Router</b> - Utilizaremos el instalador de Node.js a través de npm (también se puede utilizar cualquier otro manejador de paquetes, yarn, pmpm, etc.) Hay que instalarlo en el directorio de nuestro proyecto.
 
 ````JSX
