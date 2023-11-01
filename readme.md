@@ -35,7 +35,7 @@ ReactDOM.render(
 También le vamos a poder asignar estilos mediante className.</p></p>
 
 ````JSX
-<Link className='boton' href="/galeria"></Link>
+<Link className='boton' to="/galeria"></Link>
 ````
 
 <p>Por otro lado, debemos definir nuestras rutas hacia donde apuntar los Links. Para ello utilizaremos Routes en dónde Route será el destino de cada componente. Ambas etiquetas deben cerrarse.
