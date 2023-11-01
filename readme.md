@@ -61,3 +61,49 @@ También debemos definir que componente va a mostrarse y para ello agregamos el 
 ````JSX
 <Route path="/nosotros" element={<Nosotros />} />
 ````
+
+
+````JSX
+import { Link, Outlet, Route, Routes } from 'react-router-dom'
+import { BrowserRouter } from 'react-router-dom'
+import ReactDOM from 'react-dom'
+import React from 'react'
+
+
+export const Home = () => {
+    return (
+        <div>Pagina Principal</div>
+    )
+}
+export const Productos = () => {
+    return (
+        <div>Aca van los productos</div>
+    )
+}
+export const Contacto = () => {
+    return (
+        <div>telefono</div>
+    )
+}
+
+const App = () => {
+    return (
+        <BrowserRouter>
+            <nav>
+                <Link to="/">Home</Link>
+                <Link to="/productos">Producto</Link>
+                <Link to="/contacto">Contacto</Link>
+            </nav>
+
+            <Routes>
+                <Route index path="/" element={<Home />} />
+                <Route index path="/productos" element={< Productos />} />
+                <Route index path="/contacto" element={< Contacto />} />
+            </Routes>
+        </BrowserRouter>
+    )
+}
+
+export default App
+
+````
